@@ -21,7 +21,7 @@ class App extends React.Component{
     render(){
         return(
                <div>
-               <h2>Youtube Search</h2>
+               <h2>Youtube Easy Search</h2>
                <SearchBar onSearchterm={term => this.videoSearch(term)} />
                <VideoDetail video={this.state.selectedVideo} />
                <VideoList videos ={this.state.videos} onVideoSelect={ selectedVideo => this.setState({selectedVideo}) } />
